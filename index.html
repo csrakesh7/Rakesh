@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Goa Trip — 1–5 Oct | North Goa (Calangute)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7f9fc; --card:#ffffff; --muted:#667085; --accent:#0ea5a4; --accent-dark:#0b716f; --glass:rgba(255,255,255,0.7);
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:linear-gradient(180deg,var(--bg),#eef5f7);color:#0f1724;padding-bottom:90px}
+    header{background:linear-gradient(90deg,rgba(14,165,164,0.12),rgba(14,165,164,0.06));padding:18px 16px;border-bottom:1px solid rgba(15,23,36,0.04)}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+    .hero{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+    .title{flex:1;min-width:240px}
+    h1{font-family:'Playfair Display',serif;margin:0;font-size:22px}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+    .meta{background:var(--card);padding:10px 12px;border-radius:10px;box-shadow:0 4px 12px rgba(15,23,36,0.04);display:flex;gap:8px;align-items:center;font-size:13px}
+    .badge{background:linear-gradient(90deg,var(--accent),var(--accent-dark));color:white;padding:4px 8px;border-radius:6px;font-weight:600;font-size:12px}
+
+    .top-actions{display:flex;gap:8px;align-items:center;margin-top:10px}
+    .btn{padding:8px 10px;border-radius:8px;border:none;cursor:pointer;font-weight:600;font-size:13px}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-outline{background:transparent;border:1px solid rgba(15,23,36,0.08)}
+
+    /* Floating nav bar (mobile) */
+    .floating-nav{
+      display:flex;
+      gap:8px;
+      position:fixed;
+      bottom:12px;
+      left:50%;
+      transform:translateX(-50%);
+      background:var(--glass);
+      border-radius:12px;
+      box-shadow:0 6px 16px rgba(0,0,0,0.08);
+      padding:8px;
+      z-index:999;
+      backdrop-filter: blur(6px);
+    }
+    .floating-nav a{background:var(--accent);color:white;text-decoration:none;padding:8px 10px;border-radius:8px;font-size:13px;font-weight:700}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:16px}
+    @media (max-width:980px){main{grid-template-columns:1fr;padding-bottom:40px}}
+
+    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 4px 16px rgba(15,23,36,0.04);margin-bottom:14px}
+    .day h3{margin:0 0 6px;font-size:16px}
+    .timeplan{display:grid;grid-template-columns:110px 1fr;gap:8px 12px;padding:6px 0;font-size:14px}
+    .time{color:var(--accent-dark);font-weight:700}
+
+    table{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+    th,td{padding:8px 10px;text-align:left;border-bottom:1px solid #eef2f6}
+    th{color:var(--muted);font-weight:700}
+
+    aside .card{position:sticky;top:18px}
+    .small{font-size:13px;color:var(--muted)}
+
+    footer{text-align:center;color:var(--muted);font-size:13px;margin:24px 0;padding:0 12px}
+
+    .timeline{list-style:none;padding:0;margin:6px 0;font-size:14px}
+    .timeline li{display:flex;gap:8px;padding:8px 0;border-top:1px dashed rgba(15,23,36,0.05)}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:6px}
+
+    details summary{cursor:pointer;font-weight:700;color:var(--accent-dark);outline: none}
+    details[open] summary{margin-bottom:8px}
+
+    /* Floating Back to Top button */
+    #backToTop {
+      position:fixed;
+      bottom:80px;
+      right:20px;
+      background:var(--accent);
+      color:#fff;
+      border:none;
+      border-radius:50%;
+      width:46px;
+      height:46px;
+      font-size:20px;
+      cursor:pointer;
+      box-shadow:0 6px 14px rgba(0,0,0,0.15);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:1000;
+    }
+    #backToTop:hover{background:var(--accent-dark)}
+
+    @media (max-width:520px){
+      .timeplan{grid-template-columns:1fr}
+      .floating-nav{gap:6px;padding:6px}
+      .floating-nav a{padding:6px 8px;font-size:12px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <div class="title">
+        <h1>🌴 Goa Trip — 1–5 Oct 
+
+        </h1>
+        <p class="lead">Group: <strong>tour</strong> • Base stay: <strong>North Goa (near Calangute Beach)</strong>• Travel: Channarayapatna → North Goa  &<br>• Travel: Bangalore → North Goa</p>
+
+        <div class="top-actions">
+             <a class="btn btn-primary" href="https://maps.app.goo.gl/xdwmAruMi3cZgPue9?g_st=ac" target="_blank">📍 Channarayapatna → Calangute (Maps)</a>
+          <a class="btn btn-primary" href="https://maps.app.goo.gl/QrSt19fxNbCpyJ8h9?g_st=aw" target="_blank">📍 Bengaluru → Calangute (Maps)</a>
+          <button class="btn btn-outline" id="expandAll">Expand All</button>
+          <button class="btn btn-outline" id="collapseAll">Collapse All</button>
+        </div>
+      </div>
+
+      <div class="meta">
+        <div class="badge">North Goa</div>
+        <div class="small">5 days • Family</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <!-- Day 1 -->
+      <details id="day1" class="card day" open>
+        <summary><h3>📅 Day 1 — Wed, 1st Oct — Arrival • Dinner • Beach Walk • Rest</h3></summary>
+        <div class="timeplan">
+          <div class="time">6:00–7:00 PM</div><div>Reach hotel, check-in 🏨</div>
+          <div class="time">7:00–8:00 PM</div><div>Freshen up</div>
+          <div class="time">8:00–9:30 PM</div><div>Group dinner 🌮🍛</div>
+          <div class="time">9:30–10:30 PM</div><div>Leisure beach walk 🌊</div>
+          <div class="time">10:30–11:30 PM</div><div>Return & rest 😴</div>
+        </div>
+      </details>
+
+      <!-- Day 2 -->
+      <details id="day2" class="card day">
+        <summary><h3>📅 Day 2 — Thu, 2nd Oct — Beach Sports • Picnic • North Goa Tour • House Party • Shack Night</h3></summary>
+        <div class="timeplan">
+          <div class="time">7:00–8:00 AM</div><div>Breakfast ☕🥪</div>
+          <div class="time">8:30 AM–12:15 PM</div><div>Beach games & fun at Calangute/Baga 🏏⚽</div>
+          <div class="time">12:15–1:30 PM</div><div>Picnic lunch on beach 🧺</div>
+          <div class="time">1:45–6:00 PM</div><div>Explore North Goa (see distances in sidebar)</div>
+        </div>
+
+        <h4 style="margin-top:10px">North Goa Exploration — Distances from Calangute</h4>
+        <table>
+          <thead><tr><th>Place</th><th>Distance</th><th>Travel Time</th></tr></thead>
+          <tbody>
+            <tr><td>Fort Aguada & Lighthouse 🏰</td><td>6.5 km</td><td>15 min</td></tr>
+            <tr><td>Parra Coconut Tree Road 🌴</td><td>5.5 km</td><td>12 min</td></tr>
+            <tr><td>Chapora Fort 🌅</td><td>9.5 km</td><td>22 min</td></tr>
+            <tr><td>Vagator Beach</td><td>10.5 km</td><td>25 min</td></tr>
+            <tr><td>Sinquerim Beach & Candolim</td><td>6 km</td><td>12 min</td></tr>
+            <tr><td>Anjuna Flea Market (if open)</td><td>8 km</td><td>15 min</td></tr>
+          </tbody>
+        </table>
+
+        <p style="margin-top:8px"><strong>Best visiting route:</strong> Fort Aguada → Parra Road → Chapora Fort → Vagator Beach</p>
+
+        <div class="timeplan" style="margin-top:8px">
+          <div class="time">6:15–7:30 PM</div><div>Dinner (cook or eat out) 🍴</div>
+          <div class="time">7:30–9:30 PM</div><div>Rest & refreshments</div>
+          <div class="time">9:30–11:30 PM</div><div>House party 🎶🍹</div>
+          <div class="time">11:30–12:30 AM</div><div>Beach shack night party 🕺💃</div>
+        </div>
+      </details>
+
+      <!-- Day 3 -->
+      <details id="day3" class="card day">
+        <summary><h3>📅 Day 3 — Fri, 3rd Oct — South Goa Tour • Dolphin Ride • Sunset Cruise</h3></summary>
+        <div class="timeplan">
+          <div class="time">6:30–7:30 AM</div><div>Breakfast</div>
+          <div class="time">8:30–9:00 AM</div><div>Start South Goa tour by bus 🚍</div>
+          <div class="time">9:00 AM–5:30 PM</div><div>South Goa sightseeing</div>
+        </div>
+
+        <h4 style="margin-top:10px">South Goa Sightseeing — Distances from Calangute</h4>
+        <table>
+          <thead><tr><th>Place</th><th>Distance</th><th>Travel Time</th></tr></thead>
+          <tbody>
+            <tr><td>Miramar Beach</td><td>16 km</td><td>30–35 min</td></tr>
+            <tr><td>Dona Paula Viewpoint</td><td>18 km</td><td>35–40 min</td></tr>
+            <tr><td>Mangueshi Temple</td><td>33 km</td><td>55–65 min</td></tr>
+            <tr><td>Old Goa Churches</td><td>25 km</td><td>45–50 min</td></tr>
+            <tr><td>Spice Plantation (Ponda)</td><td>36 km</td><td>1 hr – 1 hr 15 min</td></tr>
+            <tr><td>Dolphin Ride (near Dona Paula)</td><td>18 km</td><td>35–40 min</td></tr>
+          </tbody>
+        </table>
+
+        <div class="timeplan" style="margin-top:8px">
+          <div class="time">5:30–7:00 PM</div><div>Return, freshen up</div>
+          <div class="time">7:00–8:30 PM</div><div>Mandovi River Sunset Cruise 🌅🛥️</div>
+          <div class="time">8:30–10:00 PM</div><div>Dinner</div>
+          <div class="time">10:00–11:30 PM</div><div>Relax & sleep</div>
+        </div>
+      </details>
+
+      <!-- Day 4 -->
+      <details id="day4" class="card day">
+        <summary><h3>📅 Day 4 — Sat, 4th Oct — Arambol • Sweet Water Lake • Mandrem • Fish Thali • Fancy Beach Party</h3></summary>
+        <div class="timeplan">
+          <div class="time">7:30–8:30 AM</div><div>Breakfast</div>
+          <div class="time">9:30–11:45 AM</div><div>Arambol Beach (approx 23 km)</div>
+          <div class="time">12:00–2:00 PM</div><div>Sweet Water Lake (1 km walk from Arambol) 💧</div>
+          <div class="time">2:15–3:30 PM</div><div>Mandrem Beach (3–4 km)</div>
+          <div class="time">3:45–5:00 PM</div><div>Goan Fish Thali lunch (10–15 min away) 🍛🐟</div>
+          <div class="time">5:00–7:30 PM</div><div>Rest, dress up</div>
+          <div class="time">7:30 PM–12:00 AM</div><div>Fancy Beach Party (back to Calangute/Baga ~2–3 km) 🎉🎶🔥</div>
+          <div class="time">12:00 AM</div><div>Return & sleep</div>
+        </div>
+      </details>
+
+      <!-- Day 5 -->
+      <details id="day5" class="card day">
+        <summary><h3>📅 Day 5 — Sun, 5th Oct — Pack • Souvenirs • Return</h3></summary>
+        <div class="timeplan">
+          <div class="time">7:30–9:00 AM</div><div>Breakfast & pack bags 🎒</div>
+          <div class="time">9:00–11:00 AM</div><div>Beach walk + Souvenir shopping 🛍️</div>
+          <div class="time">11:00 AM onward</div><div>Departure to Bangalore 🛤️✈️</div>
+        </div>
+      </details>
+
+      
+
+    </section>
+
+    <aside>
+      
+    <!-- Family Photo Section -->
+      <details class="card" style="margin-top:12px">
+        <summary>👨‍👩‍👧‍👦 Family Matching Outfit </summary>
+        
+      👨 Gents: Blue Jeans + Black T-Shirt & Shoes <br>• Ladies: Designer Sarees
+    
+      </details>
+
+  
+
+      <details class="card" style="margin-top:12px">
+        <summary>🎒 Packing checklist</summary>
+        <ul style="margin:6px 0;padding-left:18px;color:var(--muted);font-size:14px">
+          <li>Swimwear, towels, flip-flops</li>
+          <li>Sunscreen, sunglasses, hats</li>
+          <li>Basic medicines & first-aid</li>
+          <li>Chargers, power bank, travel documents</li>
+          <li>25-Liter water bottle</li>
+        </ul>
+      </details>
+
+    </aside>
+  </main>
+
+  <footer class="container">
+    @ Created By Rakesh c s
+  </footer>
+
+  <!-- Floating navigation (mobile) -->
+  <nav class="floating-nav" aria-label="Quick days navigation">
+    <a href="#day1">Day 1</a>
+    <a href="#day2">Day 2</a>
+    <a href="#day3">Day 3</a>
+    <a href="#day4">Day 4</a>
+    <a href="#day5">Day 5</a>
+  </nav>
+
+  <!-- Back to Top -->
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <script>
+    // Expand / Collapse All
+    const expandAllBtn = document.getElementById('expandAll');
+    const collapseAllBtn = document.getElementById('collapseAll');
+    const detailsEls = Array.from(document.querySelectorAll('main section details'));
+
+    expandAllBtn.addEventListener('click', () => detailsEls.forEach(d => d.open = true));
+    collapseAllBtn.addEventListener('click', () => detailsEls.forEach(d => d.open = false));
+
+    // Back to top button logic
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 220) backToTop.style.display = 'flex'; else backToTop.style.display = 'none';
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+    // Smooth scroll for floating nav links
+    document.querySelectorAll('.floating-nav a').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
